@@ -10,9 +10,9 @@
         <router-link tag="li" to="/Contact" class="items col-3">Contact</router-link>
       </ul>
 
-      <div class="exitButton">
+      <!-- <div class="exitButton">
         <router-link tag="i" to class="fas fa-times"></router-link>
-      </div>
+      </div> -->
 
       <div class="backButton">
         <router-link tag="i" to class="fas fa-sign-out-alt">

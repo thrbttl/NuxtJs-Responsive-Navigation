@@ -1,8 +1,6 @@
 <template>
   <div id="cover">
-    <div class="context">
-      
-    </div>
+    <div class="context"></div>
   </div>
 </template>
 
@@ -15,18 +13,16 @@ export default {};
   font-family: "Montserrat", sans-serif;
   background: url(../static/image/bg.jpg) no-repeat fixed;
   background-position: center;
-  /* background-color: black; */
-  height: 100%;
-  /* height 200vh den değiştirildi. */
-  margin: -15px -15px -15px -16px;
+  -webkit-background-position: center;
+  -moz-background-position: center;
+  -o-background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-
 .context {
-  height: 110vh;
+  height: 100vh;
 }
 </style>
 

@@ -6,6 +6,7 @@
         <div class="top-bar fixed-top">
           <div class="navigation-icon" v-if="mobileView" @click="showNav = !showNav">
             <i class="fas fa-bars" :class="{'iconNone': showNav}"></i>
+            <i class="fas fa-times" :class="{'iconNone': !showNav}"></i>
           </div>
 
           <router-link tag="a" to="/" class="navbar-brand mt-2 ml-auto mr-3">
@@ -80,9 +81,12 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(231, 231, 231);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: 0.7s transform cubic-bezier(0, 0.12, 0.14, 1);
+  background-color: rgb(78, 156, 184);
+  -webkit-box-shadow: -27px 12px 25px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -27px 12px 25px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: -27px 12px 25px 5px rgba(0, 0, 0, 0.75);
+  transition: 1s transform cubic-bezier(0, 0.12, 0.14, 1);
+  z-index: 1;
 }
 
 .fixed-top {
@@ -90,9 +94,9 @@ body {
 }
 
 .open {
-  transform: translateX(300px);
-  z-index: 99;
+  transform: translateX(200px) scale(0.9);
   display: block;
+  z-index: 99;
 }
 
 .iconNone {
@@ -103,7 +107,7 @@ body {
   padding: 25px 0px 10px 20px;
   margin-right: 10px;
   cursor: pointer;
-  color:rgb(78, 156, 184);;
+  color: rgb(78, 156, 184);
 }
 .navigation-icon i {
   font-size: 2rem;

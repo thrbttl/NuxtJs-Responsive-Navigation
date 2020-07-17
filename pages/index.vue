@@ -13,13 +13,16 @@ export default {};
   font-family: "Montserrat", sans-serif;
   background: url(../static/image/bg.jpg) no-repeat fixed;
   background-position: center;
+  -webkit-background-position: center;
+  -moz-background-position: center;
+  -o-background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
 .context {
-  height: 110vh;
+  height: 100vh;
 }
 </style>
 
