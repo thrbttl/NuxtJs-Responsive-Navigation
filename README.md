@@ -1,4 +1,4 @@
-# newProject
+# NuxtJs Responsive Navigation 🖖
 
 > NuxtJs Responsive Navbar
 
